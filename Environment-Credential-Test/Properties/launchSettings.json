@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Environment-Credential-Test": {
+      "commandName": "Project",
+      "commandLineArgs": "EmailHost EmailPort EmailUserName AD-LDAPUri"
+    }
+  }
+}
