@@ -2,7 +2,9 @@
   "profiles": {
     "Environment-Credential-Test": {
       "commandName": "Project",
-      "commandLineArgs": "EmailHost EmailPort EmailUserName AD-LDAPUri"
+      "commandLineArgs": "EmailHost EmailPort EmailUserName AD-LDAPUri",
+      "remoteDebugEnabled": false,
+      "authenticationMode": "Windows"
     }
   }
 }

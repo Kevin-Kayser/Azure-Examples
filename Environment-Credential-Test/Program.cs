@@ -38,7 +38,7 @@ namespace Environment_Credential_Test
             {
                 try
                 {
-                    Console.WriteLine(_secretClient?.GetSecret(key)?.Value.ToString());
+                    Console.WriteLine(_secretClient?.GetSecret(key)?.Value.Value.ToString());
                 }
                 catch (CredentialUnavailableException e)
                 {
@@ -47,7 +47,7 @@ namespace Environment_Credential_Test
                 }
                 catch (RequestFailedException e)
                 {
-                    Console.Write(e);
+                    Console.Write($"{key} - {e.Message}");
                 }
                 catch (Exception e)
                 {
